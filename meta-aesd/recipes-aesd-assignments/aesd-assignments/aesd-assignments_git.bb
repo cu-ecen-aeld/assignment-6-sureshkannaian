@@ -25,6 +25,7 @@ FILES:${PN} += "${bindir}/aesdsocket-start-stop"
 TARGET_CC_ARCH += "${LDFLAGS}"
 TARGET_LDFLAGS += "-pthread -lrt"
 
+
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME:${PN} = "aesdsocket-start-stop"
